@@ -1,13 +1,18 @@
-const video = document.querySelector('video');
+const button = document.querySelector("#button");
+const icon = document.querySelector("#button > i");
+const audio = document.querySelector("audio");
 
-
-video.playbackRate = 0.548;
-
-
-
-
-window.addEventListener("DOMContentLoaded", event => {
-    const audio = document.querySelector("audio");
-    audio.volume = 0.9;
+button.addEventListener("click", () => {
+  if (audio.paused) {
+    audio.volume = 0.2;
     audio.play();
-  });
+    icon.classList.remove('fa-volume-up');
+    icon.classList.add('fa-volume-mute');
+    
+  } else {
+    audio.pause();
+    icon.classList.remove('fa-volume-mute');
+    icon.classList.add('fa-volume-up');
+  }
+  button.classList.add("fade");
+});
