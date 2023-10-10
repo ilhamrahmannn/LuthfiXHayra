@@ -158,6 +158,7 @@ button {
   opacity: 0.8;
   cursor: pointer;
   transition: all 2s ease-out;
+  z-index:3;
 }
 
 button.fade:hover {
