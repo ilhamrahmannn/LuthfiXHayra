@@ -7,8 +7,9 @@ body {
 }
 
 .container {
-  width: 90%; /* Adjust container width for smaller screens */
-  max-width: none; /* Remove max-width constraint */
+  width: 90%; 
+  padding: auto ;
+  max-width: none; 
   height: auto;
   display: flex;
   justify-content: center;
@@ -65,3 +66,37 @@ body {
   animation: slideIn 4s ease-in-out; /* Adjust duration and easing as needed */
   animation-fill-mode: both;
 }
+
+.tabs {
+  width: 100%;
+  margin: 0px auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: inset;
+  border-radius: 10px;
+  background-color: #222527;
+  text-align: center;
+  border: 1px solid #fff;
+}
+
+.flex {
+  position: relative;
+  margin-top: 130%;
+  margin-left: 2%;
+  display: flex;
+  width: 100%;
+  display: flex;
+}
+
+.tab a {
+  text-decoration: none;
+  color:  #896f5b;
+  margin-left: 1%;
+  display: inline-block;
+}
+
+.tab img {
+  text-align: center;
+  justify-content: center;
+}
+
