@@ -131,6 +131,9 @@ body {
   color:  #896f5b;
   margin-left: 1%;
   display: inline-block;
+  font-family: 'Gabarito', cursive;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Raleway', sans-serif;
 }
 
 .tab img {
@@ -144,7 +147,7 @@ button {
   color: #eee;
   position: absolute;
   top: 50%;
-  left: 50%;
+  right: 50%;
   transform: translate(-50%, -50%);
   width: 10%;
   border: none;
@@ -154,7 +157,7 @@ button {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   opacity: 0.8;
   cursor: pointer;
-  transition: all 0.4s ease-out;
+  transition: all 2s ease-out;
 }
 
 button.fade:hover {
@@ -163,7 +166,7 @@ button.fade:hover {
 
 .fade {
   opacity: 0.2;
-  top: 0;
-  left: 0;
+  top: 62%;
+  right: 2%;
   transform: translate(0, 0);
 }
