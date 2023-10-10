@@ -85,12 +85,15 @@ body {
   margin-top: 130%;
   margin-left: 2%;
   display: flex;
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   right: 3%;
+  animation: fadeIn 4s ease-in-out; 
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.13);
+  border-radius: 10%;
 
 }
 
