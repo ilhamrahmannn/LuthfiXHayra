@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   margin: 5%;
-  padding: 0;
+  
   background-color: #ebe0e0b2;
   overflow: scroll;
 }
@@ -14,7 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.658);
   position: relative;
   animation: fadeIn 4s ease-in-out; /* Adjust duration and easing as needed */
@@ -43,6 +43,7 @@ body {
   align-items: center;
   text-align: center;
   z-index: 2;
+  border-radius: 2%;
 }
 
 .word1,
@@ -59,8 +60,8 @@ body {
   align-items: center;
   text-align: center;
   z-index: 1;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.274);
-  border-radius: 10px;
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.13);
+  border-radius: 2%;
   animation: slideIn 4s ease-in-out; /* Adjust duration and easing as needed */
   animation-fill-mode: both;
 }
