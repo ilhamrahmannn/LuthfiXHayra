@@ -1,24 +1,66 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 10%;
+  margin: 5%;
   padding: 0;
-  background-color:#ebe0e0b2;
+  background-color: #ebe0e0b2;
   overflow: scroll;
-  
 }
 
-
 .container {
-  width: 100%;
-  height: 100vh;
+  width: 90%; /* Adjust container width for smaller screens */
+  max-width: none; /* Remove max-width constraint */
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-#video-bg {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.658);
-  max-width: 100%;
-  height: auto;
+  position: relative;
+  animation: fadeIn 4s ease-in-out; /* Adjust duration and easing as needed */
+}
+
+/* Define keyframes for the animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Start with opacity 0 */
+    transform: translateY(10px); /* Move the elements slightly down */
+  }
+  100% {
+    opacity: 1; /* End with full opacity */
+    transform: translateY(0); /* Return to the original position */
+  }
+}
+
+.frame {
+  position: absolute;
+  width: 100%; /* Ensure the image takes up the full width of the container */
+  height: auto; /* Allow the image to maintain its aspect ratio */
+  top: 2%;
+  left: 5%;
+  right: 5%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.word1,
+.word2,
+.word3,
+.word4 {
+  position: absolute;
+  width: 100%; /* Ensure the image takes up the full width of the container */
+  height: auto; /* Allow the image to maintain its aspect ratio */
+  top: 2%;
+  left: 5%;
+  right: 5%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.274);
+  border-radius: 10px;
+  animation: slideIn 4s ease-in-out; /* Adjust duration and easing as needed */
+  animation-fill-mode: both;
 }
