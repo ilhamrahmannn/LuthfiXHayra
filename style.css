@@ -210,14 +210,14 @@ button.fade:hover {
 .slider {
   position: relative;
   margin-bottom: 3%;
-  width: 70px;
-  height: 35px;
+  width: 90px;
+  height: 45px;
   background-color: #ccc;
   overflow: hidden;
   border-radius: 20px;
   justify-content: space-between;
-  left: 38%;
-  animation: fadeIn 4s ease-in-out;;
+  left: 40%;
+  animation: fadeIn 4s ease-in-out;
 }
 
 .icon {
