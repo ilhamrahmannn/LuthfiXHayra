@@ -139,12 +139,12 @@ body {
   justify-content: center;
 }
 
-button {
+div.main button  {
   font-size: 16px;
   color: #eee;
   position: absolute;
-  top: 50%;
-  right: 40%;
+  top: 3%;
+  right: 2%;
   transform: translate(-50%, -50%);
   width: 10%;
   border: none;
@@ -154,8 +154,8 @@ button {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   opacity: 0.8;
   cursor: pointer;
-  animation: fadeIn 4s ease-in-out;
-  transition: all 2s ease-out;
+  animation: fadeIn 4s ease-in-out;;
+  transition:  all 2s ease-out;
   z-index: 3;
 }
 
@@ -299,3 +299,28 @@ button.fade:hover {
   display: block;
 }
 
+.poll-container {
+  margin-left: 5%;
+  margin-top: 2%;
+  width: 85%; /* Increase or decrease as needed to adjust the width of the poll container */
+  border: 1px solid #000; /* Add a border to the poll container */
+  padding: 2%; /* Optional: Add padding inside the border */
+  text-align: center;
+}
+
+.results {
+  width: 70%;
+  font-weight: bold;
+  display: block;
+}
+
+.input-form {
+  width: 70%;
+  margin-bottom: 3%;
+ 
+  
+}
+
+.input-form input {
+flex: 0 0.5 1%;
+}
