@@ -324,3 +324,15 @@ button.fade:hover {
 .input-form input {
 flex: 0 0.5 1%;
 }
+
+
+footer {
+  
+  color: #896f5b; /* Text color for the footer */
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0%;
+  margin-top: 1%;
+  animation: fadeIn 4s ease-in-out;
+  font-size: smaller;
