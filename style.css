@@ -147,7 +147,7 @@ button {
   color: #eee;
   position: absolute;
   top: 50%;
-  right: 50%;
+  right: 40%;
   transform: translate(-50%, -50%);
   width: 10%;
   border: none;
@@ -170,4 +170,41 @@ button.fade:hover {
   top: 62%;
   right: 2%;
   transform: translate(0, 0);
+}
+
+.word5 {
+    position: absolute;
+    width: 100%; /* Ensure the image takes up the full width of the container */
+    height: auto; /* Allow the image to maintain its aspect ratio */
+    top: 2%;
+    left: 5%;
+    right: 5%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: slideIn 4s ease-in-out; /* Adjust duration and easing as needed */
+    animation-fill-mode: both;
+    z-index: 0;
+    animation: swing 2s ease-in-out infinite;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
