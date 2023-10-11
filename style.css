@@ -155,6 +155,7 @@ button {
   opacity: 0.8;
   cursor: pointer;
   animation: fadeIn 4s ease-in-out;
+  transition: all 2s ease-out;
   z-index: 3;
 }
 
