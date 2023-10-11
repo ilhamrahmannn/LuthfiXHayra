@@ -4,6 +4,7 @@ const audio = document.querySelector("audio");
 const sliderButton = document.getElementById("sliderButton");
 const icon1 = document.getElementById("icon1");
 const icon2 = document.getElementById("icon2");
+const dropdownContent = document.querySelector(".dropdown-content");
 
 // Define two different audio sources
 const audioSource1 = "./audio/one piece.mp3";
@@ -60,4 +61,25 @@ button.addEventListener("click", () => {
     icon.classList.add("fa-volume-up");
   }
   button.classList.add("fade");
+});
+
+
+// Function to change the background color of the dropdown content
+function changeDropdownBackgroundColor(iconId) {
+  if (iconId === "icon1") {
+    dropdownContent.style.backgroundColor = "#c4bfeef5"; // Set your desired background color
+  } else {
+    dropdownContent.style.backgroundColor = "#ebe0e0ec"; // Set your desired background color
+  }
+}
+
+// Add a click event listener to the slider button
+document.getElementById("sliderButton").addEventListener("click", () => {
+  const activeIcon = document.querySelector(".icon.active");
+
+  if (activeIcon === icon1) {
+    changeDropdownBackgroundColor("icon1");
+  } else if (activeIcon === icon2) {
+    changeDropdownBackgroundColor("icon2");
+  }
 });
