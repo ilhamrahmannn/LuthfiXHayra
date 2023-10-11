@@ -11,7 +11,10 @@
     />
   </head>
   <body>
-    <style></style>
+    <style>
+
+
+    </style>
     <div class="slider">
       <div class="icon" id="icon1">
         <img class="boy" src="./image/boy.png" alt="indera" />
@@ -45,9 +48,11 @@
         Your browser does not support the audio element.
       </audio>
     </div>
-    <button id="button">
+    <div class="main">
+    <button id="play">
       <i class="fas fa-volume-up"></i>
     </button>
+  </div>
     <div class="tab">
       <div class="flex">
         <a
@@ -73,6 +78,17 @@
         </div>
           <br /></a
         >
+        <a href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0ABEGIN:VEVENT%0ADTSTART:20231118T110000%0ADTEND:20231118T160000%0ASUMMARY:Majlis%20Aqiqah%20Indera%20X%20Halimah%0ADESCRIPTION:Please%20Welcome%0ALOCATION:"https://luthfixhayra.pages.dev/"%0AEND:VEVENT%0AEND:VCALENDAR"
+        download="event.ics" target="_blank">
+          <img
+            src="./image/calendar.png"
+            alt="calendar"
+            width="20%"
+            color="#896f5b"
+          />
+          <br />
+          CALENDAR</a
+        >
         <a href="https://www.chess.com/game/81840160760" target="_blank">
           <img
             src="./image/joystick.png"
@@ -86,6 +102,28 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
+<!--
+    <div class="poll-container">
+    <h1>RSVP</h1>
+    <p>Meriahkan dengan kehadiran anda</p>
+
+    <div class="input-form">
+      <label for="name">Nama:</label>
+      <input type="text" id="nameInput">
+      <label for="numberInput">Kehadiran Ahli Keluarga:</label>
+      <input type="number" id="numberInput">
+      <button class="add" onclick="addNumber()">Add</button>
+    </div>
+
+    <div class="results">
+      <p>Jumlah Kehadiran: <span id="totalNumbers">0</span></p>
+      <p>Bilangan Keluarga:</p>
+      <p id="numberList"></p>
+    </div>
+  </div>
+-->
+
+    <script src="script.js" >
+</script>
   </body>
 </html>
