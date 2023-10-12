@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 5%;
   transition: background 0.2s linear;
-  background-color: #ebe0e0b2; /*#c4bfee46*/
+  background-color: #ebe0e0b2; /#c4bfee46/
   overflow: scroll;
 }
 
@@ -270,6 +270,7 @@ button.fade:hover {
 .dropdown {
   position: relative;
   display: inline-block;
+  z-index: 2;
 }
 
 .dropdown-content {
@@ -328,11 +329,106 @@ flex: 0 0.5 1%;
 
 footer {
   
-  color: #896f5b; /* Text color for the footer */
+  color: #896f5b; 
   text-align: center;
+  align-items: center;
   padding: 10px 0;
-  position: relative;
+  position:relative;
   bottom: 0%;
-  margin-top: 1%;
+  margin: 10%;
   animation: fadeIn 4s ease-in-out;
   font-size: smaller;
+}
+
+.form {
+  font-family: 'Raleway';
+  height: auto;
+  width: 60%;
+  background-color: #fff;
+  margin: 5% auto ;
+  border-radius: 10px;
+  color: #666;
+  padding: 0px 0px 2%;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0, .25);
+}
+
+
+.info {
+  padding: 10px;
+}
+
+h1, h2, p {
+  text-align: center;
+  padding: 0px;
+  margin: 5px 5px;
+}
+
+h2 {
+  font-family: 'Great Vibes', cursive;
+  font-weight: 100;
+}
+
+p.line {
+  margin: 0px auto 5% auto;
+  color: #999;
+}
+button .accept .regret {
+  display: inline-block;
+  width: 400px;
+}
+form input .accept {
+  color: #666;
+  background-color: #ffbdc7;
+  border: none;
+  font-family: 'Raleway';
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 32px;
+  width: 40%;
+  margin: 4% 5% 5% 5%; 
+  float:left;
+}
+
+form input{
+  font-size: 15px;
+  color: #666;
+  padding: 6px;
+  margin: 2% auto 2%;
+  display: block;
+  width: 50%; 
+}
+
+input.accept {
+  border-radius: 0px 0px 0px 10px;
+  background-color: #cc919a;
+  color: #f3e3d7;
+  width: 30%;
+}
+
+
+input.accept:hover {
+  background-color: #cc919a;
+  transition: .5s;
+}
+input.regret:hover {
+  background-color: #cc919a;
+  transition: .5s;
+}
+
+input:focus {
+  outline: 0;
+}
+.form textarea{
+  font-size: 15px;
+  color: #666;
+  padding: 6px;
+  margin: 2% auto 2%;
+  display: block;
+  width: 50%; 
+ 
+}
+
+
+.top {
+  margin-top: 30%;
+}
