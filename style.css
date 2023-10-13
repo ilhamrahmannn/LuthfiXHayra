@@ -218,6 +218,7 @@ button.fade:hover {
   justify-content: space-between;
   left: 40%;
   animation: fadeIn 4s ease-in-out;
+  
 }
 
 .icon {
@@ -230,17 +231,21 @@ button.fade:hover {
 
 .icon.active {
   display: flex;
+  
 }
 
 #icon1 {
   background-color: #c4bfeef5;
   color: #fff;
   left: 50%;
+  
 }
 
 #icon2 {
   background-color: #ebe0e0ec;
   left: 1%;
+  animation: moveRightToLeft 0.8s linear;
+  
 }
 
 .slider-button {
@@ -250,13 +255,24 @@ button.fade:hover {
   background-color: #2c3e50;
   cursor: pointer;
   z-index: 1;
+  border-radius:20px ;
+  
+}
+
+div.slider-button .boy{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: #c4bfeef5;
+  color: #fff;
+  left: 100%;
   border-radius: 20px;
- 
 }
 
 #sliderButton {
   left: 0;
-  transition: left 0.3s ease-in-out;
+  transition: left 0.5s ease-in-out;
+  
 }
 
 .boy {
@@ -265,6 +281,16 @@ button.fade:hover {
 
 .girl {
   width: 40%;
+  
+}
+
+@keyframes moveRightToLeft {
+  0% {
+    left: 105%; /* Start at the right edge of the container */
+  }
+  102% {
+    left: 0; /* Move to the left edge of the container */
+  }
 }
 
 .dropdown {
