@@ -305,7 +305,6 @@ div.slider-button .boy{
   background-color: #ebe0e0ec;
   min-width: 160px;
   margin-top: 2%;
-  right: -30%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   border-radius: 10%;
   z-index: 1;
@@ -321,7 +320,12 @@ div.slider-button .boy{
   font-family: "Orbitron", sans-serif;
   font-family: "Raleway", sans-serif;
 }
-
+a:hover  {
+  display: block;
+  background-color: #e0dad68a;
+  transition: .5s;
+  border-radius: 10%;
+}
 .dropdown:hover .dropdown-content {
   display: block;
 }
