@@ -113,32 +113,17 @@ function displayResults() {
   
 }
 
-const input = document.querySelector('#input');
 
-input.addEventListener('input', () => {
-// Submit the form data
-const formData = new FormData(input.closest('form'));
-
-fetch(input.formAction, {
-method: 'POST',
-body: formData,
-})
-.then(response => response.json())
-.then(data => {
-// Check if the data was submitted successfully
-if (data.success) {
-  // Display an alert message
-  alert('Data submitted successfully!');
-
-  // Reload the page
-  location.reload();
-} else {
-  // Display an error message
-  alert('Data submission failed!');
-}
-})
-.catch(error => {
-// Display an error message
-alert('Data submission failed!');
-});
-});
+var form = document.getElementById('rsvp-form');
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(document.getElementById("rsvp-form")),
+            }).then(
+                response => response.json()
+            ).then((html) => {
+                alert("Terima Kasih atas Maklum Balas anda! ");
+                window.location.href="index.html";
+            });
+        });
