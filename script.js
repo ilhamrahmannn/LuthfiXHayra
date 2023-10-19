@@ -8,7 +8,7 @@ const icon2 = document.getElementById("icon2");
 const dropdownContent = document.querySelector(".dropdown-content");
 
 // Define two different audio sources
-const audioSource1 = "./audio/one piece.mp3";
+const audioSource1 = "./audio/Sunshine.mp3";
 const audioSource2 = "/audio/comel.mp3";
 
 // Define two different background colors
@@ -52,7 +52,7 @@ updateAudioAndBackground();
 // Mute button functionality
 button.addEventListener("click", () => {
   if (audio.paused) {
-    audio.volume = 0.8;
+    audio.volume = 0.3;
     audio.play();
     icon.classList.remove("fa-volume-up");
     icon.classList.add("fa-volume-mute");
