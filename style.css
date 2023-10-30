@@ -4,6 +4,7 @@ body {
   transition: background 0.2s linear;
   background-color: #ebe0e0b2; /#c4bfee46/
   overflow: scroll;
+  
 }
 
 .container {
@@ -112,7 +113,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  left: 3%;
+  left: 0%;
   animation: bounce 3s ease-in-out;
   animation-fill-mode: both;
   opacity: 0;
@@ -137,6 +138,11 @@ body {
 .tab img {
   text-align: center;
   justify-content: center;
+}
+#navbar {
+  position: fixed;
+  bottom: 0;
+  z-index: 100; 
 }
 
 div.main button  {
@@ -459,4 +465,7 @@ input:focus {
  
 }
 
-
+.pos {
+  position: relative;
+  margin-top: 130%;
+}
