@@ -97,8 +97,11 @@ body {
   position: relative;
   margin-top: 130%;
   margin-left: 2%;
+  padding-top: 10px;
+  padding-bottom: px;
   display: flex;
   width: 90%;
+  height: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -381,7 +384,7 @@ footer {
   padding: 10px 0;
   position:relative;
   bottom: 0%;
-  margin: 10%;
+  margin: 10% 10% 12%;
   animation: fadeIn 4s ease-in-out;
   font-size: smaller;
 }
