@@ -119,6 +119,7 @@ body {
   opacity: 0;
   box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.13);
   border-radius: 10%;
+  background-color: #ffffff;
 }
 .flex.active {
   opacity: 1;
@@ -143,6 +144,7 @@ body {
   position: fixed;
   bottom: 0;
   z-index: 100; 
+  
 }
 
 div.main button  {
@@ -303,10 +305,19 @@ div.slider-button .boy{
   position: relative;
   display: inline-block;
   z-index: 2;
+  cursor: pointer;
+  
+  
+}
+
+.dropdown:hover .dropdown-content {      
+  max-height: 300px;
+  visibility: visible;
+  bottom: 100%;
 }
 
 .dropdown-content {
-  display: none;
+  display: block;
   position: absolute;
   background-color: #ebe0e0ec;
   min-width: 160px;
@@ -314,6 +325,9 @@ div.slider-button .boy{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   border-radius: 10%;
   z-index: 1;
+  
+
+  
 }
 
 .dropdown-content a {
@@ -325,15 +339,19 @@ div.slider-button .boy{
   font-family: "Gabarito", cursive;
   font-family: "Orbitron", sans-serif;
   font-family: "Raleway", sans-serif;
+  
+  
 }
 a:hover  {
   display: block;
   background-color: #e0dad68a;
   transition: .5s;
   border-radius: 10%;
+  
 }
 .dropdown:hover .dropdown-content {
   display: block;
+  transition: all 0.4s linear;
 }
 
 .poll-container {
@@ -467,5 +485,6 @@ input:focus {
 
 .pos {
   position: relative;
-  margin-top: 130%;
+  margin-top: 150%;
+  
 }
