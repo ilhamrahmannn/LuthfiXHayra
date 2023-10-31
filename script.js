@@ -127,3 +127,4 @@ var form = document.getElementById('rsvp-form');
                 window.location.href="index.html";
             });
         });
+
