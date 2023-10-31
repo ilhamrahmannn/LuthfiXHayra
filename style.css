@@ -68,17 +68,7 @@ body {
   animation-fill-mode: both;
 }
 
-.tabs {
-  width: 100%;
-  margin: 0px auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  box-shadow: inset;
-  border-radius: 10px;
-  background-color: #222527;
-  text-align: center;
-  border: 1px solid #fff;
-}
+
 
 @keyframes bounce {
   0% {
@@ -329,8 +319,10 @@ div.slider-button .boy{
 
   
 }
-
-.dropdown-content a {
+span{
+  color: #896f5b;
+}
+.dropdown-content a{
   color: black;
   padding: 12px 16px;
   text-decoration: none;
