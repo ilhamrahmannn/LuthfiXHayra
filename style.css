@@ -68,7 +68,13 @@ body {
   animation-fill-mode: both;
 }
 
-
+span {
+  color: #896f5b;
+  display: inline-block;
+  font-family: "Gabarito", cursive;
+  font-family: "Orbitron", sans-serif;
+  font-family: "Raleway", sans-serif;
+}
 
 @keyframes bounce {
   0% {
@@ -107,7 +113,7 @@ body {
   align-items: center;
   text-align: center;
   left: 0%;
-  animation: bounce 3s ease-in-out;
+  animation: fadeIn 4s ease-in-out;
   animation-fill-mode: both;
   opacity: 0;
   box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.13);
@@ -313,8 +319,8 @@ div.slider-button .boy{
   display: block;
   position: absolute;
   background-color: #ebe0e0ec;
-  min-width: 160px;
-  margin-top: 2%;
+  min-width: 145px;
+  margin-bottom: 5%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   border-radius: 10%;
   z-index: 1;
@@ -328,6 +334,8 @@ span{
 .dropdown-content a{
   color: black;
   padding: 12px 16px;
+  margin-top: -10px;
+  margin-bottom: -10px;
   text-decoration: none;
   display: block;
   color: #896f5b;
